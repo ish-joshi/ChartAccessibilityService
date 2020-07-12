@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackSpoken|feedbackHaptic|feedbackAudible"
+    android:accessibilityFlags="flagDefault"
+    android:description="@string/service_description"
+    android:summary="@string/service_summary"
+    android:notificationTimeout="100"
+    android:interactiveUiTimeout="10000"
+    android:packageNames="com.xxmassdeveloper.mpchartexample"
+    android:settingsActivity="com.android.talkback.TalkBackPreferencesActivity" />

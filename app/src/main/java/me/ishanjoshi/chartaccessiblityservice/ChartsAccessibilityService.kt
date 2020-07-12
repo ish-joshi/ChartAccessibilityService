@@ -3,7 +3,6 @@ package me.ishanjoshi.chartaccessiblityservice
 import android.accessibilityservice.AccessibilityService
 import android.util.Log
 import android.view.accessibility.AccessibilityEvent
-import android.view.accessibility.AccessibilityEvent.TYPE_VIEW_CLICKED
 
 class ChartsAccessibilityService : AccessibilityService() {
 

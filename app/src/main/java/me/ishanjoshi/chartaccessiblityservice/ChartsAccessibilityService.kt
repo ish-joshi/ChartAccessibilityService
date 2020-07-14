@@ -13,14 +13,18 @@ class ChartsAccessibilityService : AccessibilityService() {
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
+
         event?.toString()?.let { Log.d(TAG, it) }
 
         // Try and log it
-        val recordCount = event?.text?.size
-        if (recordCount != null) {
+        event?.text?.let {
+            val recordCount = it.size
             if (recordCount > 0) {
                 Log.d(TAG, "Record count is $recordCount")
-                Log.d(TAG, "Message is ${event.text[0]}")
+                for (item in event.text) {
+                    Log.d(TAG, item.toString())
+                }
+                Log.d(TAG, "---Line--Break--\n")
             }
         }
 
